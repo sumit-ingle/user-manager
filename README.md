@@ -8,8 +8,8 @@
 
 2) `npm install`
 
-3) Download DynamoDB local from here: https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html <br />
-    - Extract contents to this directory: https://github.com/sumit-ingle/user-manager/tree/master/dynamodb-local
+3) Download DynamoDB local from here: [DynamoDB Local]( https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.DownloadingAndRunning.html) <br />
+    - Extract contents to this directory: [user-manager/dynamodb-local/](https://github.com/sumit-ingle/user-manager/tree/master/dynamodb-local)
 
 4) `.\start-dynamodb-local.sh` - starts DynamoDB locally at http://localhost:8000
 
