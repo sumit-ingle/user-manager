@@ -13,4 +13,8 @@
 
 4) `.\start-dynamodb-local.sh` - starts DynamoDB locally at http://localhost:8000
 
-5) `npm run dev` - starts client app at http://localhost:4200 & server app at http://localhost:3333
+5) `npm run create-db` - creates the table "users"
+
+6) `npm run seed-db` - adds 2 new users to the "users" table
+
+7) `npm run dev` - starts client app at http://localhost:4200 & server app at http://localhost:3333
