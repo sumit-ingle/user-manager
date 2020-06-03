@@ -1,0 +1,17 @@
+{
+    "quiet": true,
+    "port": 3000,
+    "http2": false,
+    "pathIndex": "client/dev",
+    "only": [
+        "client/dev/**/*"
+    ],
+    "static": [
+        "node_modules"
+    ],
+    "proxy": true,
+    "proxyWhen": "/api/*",
+    
+    "proxyTarget": "http://localhost:3333"
+    
+}

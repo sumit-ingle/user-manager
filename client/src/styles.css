@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~font-awesome/css/font-awesome.css';
+
+.fontLarger {
+  font-size: larger;
+}
+
+.orange {
+  background-color: orange !important;
+  color: white!important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fixed {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 20px;
+  /* height: calc(100% - 10rem); */
+}
+
+.pt-10 {
+  padding-top: 5rem;
+}
+
+body {
+  background: rgba(0, 0, 0, 0.7)!important;
+}
+
+/*
+ *  Scrollbar style
+ */
+.scrollbar-thin::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+    border-radius   : 10px;
+    background-color: rgba(0, 0, 0, .3)
+}

@@ -1,0 +1,28 @@
+<div class="container fixed container-white" data-spy="affix" data-offset-top="197">
+    <div class="row">
+        <div class="col-sm-7 my-3 pl-5">
+            <span class="float-left">
+                <img class="pr-2" src="assets/icons/ico_users_dark.svg">
+                <span class="fontLarger">Users</span>
+            </span>
+        </div>
+        <div class="col-sm-5 my-3">
+            <div class="input-group">
+                <input class="form-control py-2 border-right-0 border" type="text" placeholder="Search"
+                    (keyup)="userList.searchByFirstColumn($event)">
+                <span class="input-group-append mr-3">
+                    <button class="btn btn-outline-secondary border-left-0 border" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </span>
+                <button type="button" class="btn btn-warning text-white orange" modal-box [title]='"Add User"'
+                    [componentData]="{buttonText: 'ADD USER', userModel: {status: 'Active', roleType: 'Admin'}}"
+                    [componentName]="'UserFormComponent'" (save)="this.onUserAdd($event)">
+                    <i class="fa fa-plus"></i>
+                    Add User
+                </button>
+            </div>
+        </div>
+    </div>
+    <app-user-list #userList [rows]="users" [columns]="userColumns" (onUpdate)="onUserUpdate($event)"></app-user-list>
+</div>

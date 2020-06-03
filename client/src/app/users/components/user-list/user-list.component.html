@@ -1,0 +1,29 @@
+<div #tableContainer class="user-list-container">
+  <table #usersTable class="table table-striped table-hover table-fixed">
+    <thead>
+      <tr>
+        <th class="pl-5" *ngFor="let column of columns">
+          {{ column.displayName }}
+        </th>
+        <th class="pl-5"></th>
+      </tr>
+    </thead>
+    <tbody class="scrollbar-thin">
+      <tr *ngFor="let row of rows;index as i">
+        <td class="pl-5" *ngFor="let column of columns">
+          <img *ngIf="column.key === 'status'" class='mr-1'
+            [src]="'assets/icons/ico_' + row[column.key].trim().toLowerCase() + '.svg'">
+          {{ row[column.key] }}
+        </td>
+        <td class="pl-5" style="text-align:center">
+          <!-- <span class="cursor-pointer" (click)="onRowEdit(row)"> -->
+          <span class="cursor-pointer" modal-box [title]='"Edit User"'
+            [componentData]="{buttonText: 'UPDATE USER', userModel: row}" [componentName]="'UserFormComponent'"
+            (save)="this.updateUser($event, i)">
+            <img src="assets/icons/ico_edit.svg">
+          </span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,17 @@
+.nav-item {
+    padding    : 2px;
+    margin-left: 7px;
+}
+
+.nav-item>a img {
+    padding  : 0px 8px;
+    max-width: 35px;
+}
+
+/* .nav-item>a svg{
+    padding: 0px 8px;
+    max-width: 35px;
+    max-height: 35px;
+    display: inline;
+    fill: none;
+} */

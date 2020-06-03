@@ -1,0 +1,79 @@
+.user-list-container {
+    bottom  : 0px;
+    position: absolute;
+    top     : 70px;
+    left    : 0px;
+    right   : 0px;
+}
+
+/* SOL 1 */
+/* table tbody { display:block!important; max-height:350px; overflow-y:scroll; }
+table thead, table tbody tr { display:table; width:100%; table-layout:fixed} */
+
+/* SOL 2 */
+/* thead, tbody { display: block; }
+tbody {
+    height: 100px;     
+    overflow-y: auto;  
+    overflow-x: hidden;
+} */
+
+/* SOL 3 */
+.table-fixed {
+    display  : flex;
+    flex-flow: column;
+    height   : 100%;
+    width    : 100%;
+}
+
+.table-fixed thead {
+    /* head takes the height it requires, 
+    and it's not scaled when table is resized */
+    flex : 0 0 auto;
+    width: calc(100% - 0.9em);
+}
+
+.table-fixed tbody {
+    /* body takes all the remaining available space */
+    flex      : 1 1 auto;
+    display   : block;
+    overflow-y: scroll;
+}
+
+.table-fixed tbody tr {
+    width: 100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody tr {
+    display        : table;
+    table-layout: fixed;
+}
+
+/* SOL 4 */
+/* .table-fixed {
+    overflow:scroll;
+    height:100px;
+} */
+
+/* SOL 5 */
+/* .table-fixed tbody {
+    height: 500px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.table-fixed thead,
+.table-fixed tbody,
+.table-fixed tr,
+.table-fixed td,
+.table-fixed th {
+    display: block;
+}
+
+.table-fixed tbody td,
+.table-fixed tbody th,
+.table-fixed thead > tr > th {
+    float: left;
+    position: relative;
+} */

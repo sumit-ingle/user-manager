@@ -1,0 +1,20 @@
+{
+  "generator-ng-fullstack": {
+    "appName": "user-manager",
+    "username": "sumit-ingle",
+    "userEmail": "inglesumit30@yahoo.in",
+    "stack": "fullstack",
+    "repoHostUrl": "github.com",
+    "userNameSpace": "sumit-ingle",
+    "client": "vue2",
+    "clientBundler": "webpack",
+    "stylePreprocessor": "less",
+    "server": "node",
+    "nodeWebFrameworkServer": "express",
+    "transpilerServer": "node",
+    "secure": false,
+    "testsSeparated": true,
+    "differentStaticServer": false,
+    "boilerplate": false
+  }
+}

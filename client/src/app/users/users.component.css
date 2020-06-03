@@ -1,0 +1,10 @@
+.form-control:focus {
+    outline: 0 !important;
+    border-color: initial;
+    box-shadow: none;
+}
+
+.container-white {
+    background-color: white;
+    margin-top: 80px;
+}
